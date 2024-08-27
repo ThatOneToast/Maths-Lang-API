@@ -1,7 +1,7 @@
 use std::{
     io::Write,
     path::Path,
-    process::{self, Command, Stdio},
+    process::{Command, Stdio},
 };
 
 use git2::Repository;

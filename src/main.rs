@@ -1,3 +1,19 @@
+
+mod helpers;
+mod maths_command;
+
+
 fn main() {
-    println!("Hello, world!");
+    let maths = helpers::Maths::new(
+        Option::from("/Users/toast/Documents/git/Maths-Lang/target/debug/Maths".to_string())
+    );
+    
+    
+    let expression = r#"
+let num = 50
+;num"#;
+    
+    maths.run(expression)
+    
+    
 }
